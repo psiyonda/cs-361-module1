@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreation form</title>
+    <a href="style.css"></a>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="POST">
+        <!--personal fields-->
+<fieldset><legend>Personal Details</legend> 
+<label for="name">Full Name <br></label>
+<input type="name" name="full name" id="full name" required >
+<br>
+<label for="email">email <br></label>
+<input type="email" required>
+<br>
+<label for="tel" > Phone No <br><input type="Phone No" id="tel" required></label>
+<br>
+<label for="DOB"> Date of birth <br> <input type="DOB" required> </label>
+<br>
+<p>Gender</p>
+<label for="Male"> <input type="radio" name="Gender"     id="Male" value="Male" >Male </label>
+<br>
+<label for="female"> <input type="radio" name="Gender" id="female" value="female">Female </label>
+<br>
+<label for="other">  <input type="radio" name="Gender" id="Other" value="Other">Other </label>
+<br>
+<br>
+<label for="profile photo"> Profile photo</label>
+<br>
+<input type="file" name=" Photo" id="photo" accept="image/*">
+</fieldset>
+    <!--academic fields-->
+<fieldset><legend>Academic Details</legend>
+<label for="ID">Student ID <br><input type="ID" name="Student ID" id="Student ID" pattern='[A-Z]{2}[0-9]{6}' required> </label>
+<br>
+<label for="programme">Programme </label>
+<br>
+ <select >
+<option value="CS">CS</option>
+<option value="IT">IT</option>
+<option value="IS">IS</option>
+</select>
+    
+<br>
+<label for="Year of study">Year of study <br><input type="number" name="year of study" id="year of study" min="1" max="5"></label>
+<br>
+<p>Specialisation</p>
+<label ><input type="checkbox" name="specialisation" value="Web" >Web</label>
+<br>
+<label ><input type="checkbox" name="specialisation" value="security">Security</label> 
+<br>
+<label ><input type="checkbox" name="specialisation" value="AI">AI</label>
+<br>
+<label> <input type="checkbox" name="specialisation" value="Network">Network</label>
+<br>
+<!--Textarea + submit-->
+<label for="about">Tell us about yourself</label>
+<br>
+<textarea name="about" id="about" rows="4" required>
+    
+  </textarea>
+
+</fieldset>
+
+ <fieldset>
+    <input type="submit" value="Submit">
+    <br>
+    <input type="reset" value="Reset">
+ </fieldset>
+    </form>
+    
+</body>
+</html>
